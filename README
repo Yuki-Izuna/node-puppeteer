@@ -1,0 +1,8 @@
+build:
+	docker build -t puppeteer-chrome-linux .
+
+Windows:
+	docker run --add-host=domain:xxx.xxx.xxx.xxx -it --rm -v "%cd%/app:/app" puppeteer-chrome-linux /bin/sh
+
+node-run:
+	node script.js cap.csv
